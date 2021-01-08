@@ -1,0 +1,32 @@
+#项目说明
+前端项目结构
+-项目名
+    -[node_modules]    存放第三方node模块 由npm自动生成 不需要git管理
+    -[interface]    存放php文件
+        -[library]    库文件 
+    -[src]    存放前端项目源代码
+        -[html]
+        -[style]
+        -[js]
+            -[library]    前端文件
+                -jquery.js
+                -bootstrap.js
+                -cookie.js
+                -querystring.js
+            -index.js
+            -product.js
+            -shop.js
+            -reg.js
+            -login.js
+    -[dist]    存放工具生成的文件（gulp grunt webpack...）
+        -[html]
+            -index.html
+        -[css]
+            -index.min.css
+        -[js]
+
+        -[img]
+    -gulpfile.js    gulp的配置文件
+    -.gitignore    git忽略列表
+    -package.json    node模块依赖列表
+    -README.md    项目说明
