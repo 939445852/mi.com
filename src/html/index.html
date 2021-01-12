@@ -8,11 +8,16 @@
 </head>
 <body>
     <div id="app">
+        <!-- 页头 -->
         <header>
             <div>
-                <div class="site-gg"></div>
+                <!-- 顶部广告 -->
+                <div class="site-top"></div>
+                <!-- 顶部条 -->
                 <div class="site-topbar">
-                    <div class="container">
+                    <!-- 版心 -->
+                    <div class="container clear">
+                        <!-- 条内导航 -->
                         <div class="topbar-nav">
                             <a href="">小米商城</a>
                             <span>|</span>
@@ -40,12 +45,15 @@
                             <span>|</span>
                             <a href="">Select Location</a>
                         </div>
+                        <!-- 条内购物车 -->
                         <div class="topbar-cart">
                             <a href="" class="cart-mini">购物车<span>（0）</span></a>
+                            <!-- 购物车内容 -->
                             <div class="cart-menu">
                                 购物车中还没有商品，赶紧选购吧！
                             </div>
                         </div>
+                        <!-- 条内注册登入按钮 -->
                         <div class="topbar-info">
                             <a href="">登录</a>
                             <span>|</span>
@@ -55,13 +63,20 @@
                         </div>
                     </div>
                 </div>
+                <!-- 主导航 -->
                 <div class="site-header">
-                    <div class="container">
+                    <!-- 版心 -->
+                    <div class="container clear">
+                        <!-- LOGO -->
                         <div class="header-logo">
                             <a href="" title="小米官网">小米官网</a>
                         </div>
+                        <!-- 导航 -->
                         <div class="header-nav">
                             <ul>
+                                <li class="category">
+                                    <a href="">全部商品分类</a>
+                                </li>
                                 <li><a href="">小米手机</a></li>
                                 <li><a href="">Redmi 红米</a></li>
                                 <li><a href="">电视</a></li>
@@ -73,17 +88,20 @@
                                 <li><a href="">社区</a></li>
                             </ul>
                         </div>
+                        <!-- 搜索框 -->
                         <div class="header-search">
                             <form action="">
-                                <input type="text">
-                                <input type="submit">
+                                <input type="text"><input type="submit" value=" ">
                             </form>
                         </div>
                     </div>
-                    <div class="header-nav-menu"></div>
                 </div>
-                <div class="site-category">
-                    <div class="container">
+                <!-- 二级导航 -->
+                <div class="header-nav-menu"></div>
+                <!-- 全部分类导航 -->
+                <div class="category-menu">
+                    <div class="container clear">
+                        <!-- 一级菜单 -->
                         <div class="left-nav">
                             <ul>
                                 <li><a href="">手机 电话卡<em></em></a></li>
@@ -98,49 +116,221 @@
                                 <li><a href="">生活 箱包<em></em></a></li>
                             </ul>
                         </div>
+                        <!-- 二级菜单 -->
                         <div class="right-nav">
-
-                        </div>
-                        <div class="slideshow">
-                            <div class="button-prev"></div>
-                            <div class="button-next"></div>
-                            <div class="button-list">
-                                <ol>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="sub">
-                    <div class="container">
-                        <div class="l-box">
                             <ul>
-                                <li><a href=""><img src="" alt=""><span>小米秒杀</span></a></li>
-                                <li><a href=""><img src="" alt=""><span>小米秒杀</span></a></li>
-                                <li><a href=""><img src="" alt=""><span>小米秒杀</span></a></li>
-                                <li><a href=""><img src="" alt=""><span>小米秒杀</span></a></li>
-                                <li><a href=""><img src="" alt=""><span>小米秒杀</span></a></li>
-                                <li><a href=""><img src="" alt=""><span>小米秒杀</span></a></li>
-                            </ul>
-                        </div>
-                        <div class="r-box">
-                            <ul>
-                                <li><a href=""><img src="../img/001.jpg" alt=""></a></li>
-                                <li><a href=""><img src="../img/002.jpg" alt=""></a></li>
-                                <li><a href=""><img src="../img/003.jpg" alt=""></a></li>
+                                <li>
+                                    <a href="">
+                                        <img class="lazy" data-original="" alt="">
+                                        <span>小米</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img class="lazy" data-original="" alt="">
+                                        <span>小米</span>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
+        <!-- 轮播图 -->
+        <section>
+            <!-- 版心 -->
+            <div class="container">
+                <!-- 上部份轮播图片 -->
+                <div class="slideshow">
+                    <!-- 上一张按钮 -->
+                    <div class="button-prev"></div>
+                    <!-- 下一张按钮 -->
+                    <div class="button-next"></div>
+                    <!-- 小圆点 -->
+                    <div class="button-list">
+                        <ol>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- 下部分导航索引 -->
+                <div class="sub">
+                    <div class="l-box">
+                        <ul>
+                            <li><a href=""><img class="lazy" data-original="" alt=""><span>小米秒杀</span></a></li>
+                            <li><a href=""><img class="lazy" data-original="" alt=""><span>小米秒杀</span></a></li>
+                            <li><a href=""><img class="lazy" data-original="" alt=""><span>小米秒杀</span></a></li>
+                            <li><a href=""><img class="lazy" data-original="" alt=""><span>小米秒杀</span></a></li>
+                            <li><a href=""><img class="lazy" data-original="" alt=""><span>小米秒杀</span></a></li>
+                            <li><a href=""><img class="lazy" data-original="" alt=""><span>小米秒杀</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="r-box">
+                        <ul>
+                            <li><a href=""><img class="lazy" data-original="../img/001.jpg" alt=""></a></li>
+                            <li><a href=""><img class="lazy" data-original="../img/002.jpg" alt=""></a></li>
+                            <li><a href=""><img class="lazy" data-original="../img/003.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 主内容 -->
         <main>
             <div class="container">
-                <div>
+                <!-- 小米秒杀 -->
+                <div class="box-1">
+                    <div class="box-hd">
+                        <h2>小米闪购</h2>
+                        <div class="more">
+                            <span>&lt;5</span>
+                            <span>&gt;5</span>
+                        </div>
+                    </div>
+                    <div class="box-bd clear">
+                        <div class="l-bd">
+
+                        </div>
+                        <div class="r-bd">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="" alt=""></div>
+                                            <h3 class="title">小米电视 大师 65英寸OLED</h3>
+                                            <p class="desc">像素级控光，重塑感官震撼</p>
+                                            <p class="price"><span>9999</span>元<del>12999元</del></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="banner-box">
+                        <a href="">
+                            <img class="lazy" data-original="../img/t-1.webp" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- 手机部分 -->
+                <div class="box-2">
+                    <div class="box-hd">
+                        <h2>手机</h2>
+                        <div class="more">
+                            <a href="">查看全部</a>
+                        </div>
+                    </div>
+                    <div class="box-bd clear">
+                        <div class="l-bd">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img class="lazy" data-original="../img/0001.webp" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="r-bd">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0002.webp" alt=""></div>
+                                            <h3 class="title">小米11</h3>
+                                            <p class="desc">骁龙888 | 2K四曲面屏</p>
+                                            <p class="price"><span>3999</span>元<span>起</span></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0003.webp" alt=""></div>
+                                            <h3 class="title">Note 9 Pro</h3>
+                                            <p class="desc">一亿像素夜景相机，120Hz六档变速高刷屏</p>
+                                            <p class="price"><span>1599</span>元<span>起</span></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0004.webp" alt=""></div>
+                                            <h3 class="title">Note 9</h3>
+                                            <p class="desc">天玑 800U处理器，5000mAh电池，</p>
+                                            <p class="price"><span>1299</span>元<span>起</span></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0005.webp" alt=""></div>
+                                            <h3 class="title">Note 9 4G</h3>
+                                            <p class="desc">6000mAh长续航</p>
+                                            <p class="price"><span>999</span>元<span>起</span></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0006.webp" alt=""></div>
+                                            <h3 class="title">小米10 至尊版</h3>
+                                            <p class="desc">120X 变焦/120W秒充/120Hz屏幕</p>
+                                            <p class="price"><span>5299</span>元<span>起</span></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0007.webp" alt=""></div>
+                                            <h3 class="title">Redmi K30S 至尊纪念版</h3>
+                                            <p class="desc">144Hz[7档]变速高刷屏</p>
+                                            <p class="price"><span>2599</span>元<span>起</span></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0008.webp" alt=""></div>
+                                            <h3 class="title">Redmi K30 至尊版</h3>
+                                            <p class="desc">120Hz弹出全面屏，天玑1000+旗舰处理器</p>
+                                            <p class="price"><span>1999</span>元<span>起</span></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0009.webp" alt=""></div>
+                                            <h3 class="title">腾讯黑鲨3S</h3>
+                                            <p class="desc">骁龙865处理器，120Hz刷新率</p>
+                                            <p class="price"><span>3999</span>元<span>起</span></p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="banner-box">
+                        <a href="">
+                            <img class="lazy" data-original="../img/t-2.webp" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- 家电部分 -->
+                <div class="box-3">
                     <div class="box-hd">
                         <h2>家电</h2>
                         <div class="more">
@@ -150,28 +340,552 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="box-bd">
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li>
-
-                            </li>
-                        </ul>
+                    <div class="box-bd clear">
+                        <div class="l-bd">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img class="lazy" data-original="../img/0010.webp" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img class="lazy" data-original="../img/0015.webp" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="r-bd">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0011.webp" alt=""></div>
+                                            <h3 class="title">Redmi 红米电视 70英寸</h3>
+                                            <p class="desc">70英寸震撼巨屏，4K画质，细腻如真</p>
+                                            <p class="price"><span>3299</span>元<del><span>3799</span>元</del></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0012.webp" alt=""></div>
+                                            <h3 class="title">小米全面屏电视E32C</h3>
+                                            <p class="desc">全面屏设计，人工智能系统</p>
+                                            <p class="price"><span>899</span>元<del><span>999</span>元</del></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0013.webp" alt=""></div>
+                                            <h3 class="title">小米全面屏电视E55A</h3>
+                                            <p class="desc">7全面屏设计，人工智能语音</p>
+                                            <p class="price"><span>2299</span>元<del><span>2399</span>元</del></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0014.webp" alt=""></div>
+                                            <h3 class="title">米家空调</h3>
+                                            <p class="desc">出众静音，快速制冷热</p>
+                                            <p class="price"><span>1699</span>元<del><span>1799</span>元</del></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0016.webp" alt=""></div>
+                                            <h3 class="title">米家互联网洗烘一体机 Pro 10kg</h3>
+                                            <p class="desc">智能洗烘，省心省力</p>
+                                            <p class="price"><span>2899</span>元<del><span>3299</span>元</del></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0017.webp" alt=""></div>
+                                            <h3 class="title">Redmi全自动波轮洗衣机1A 8kg</h3>
+                                            <p class="desc">一键操作，父母都爱用</p>
+                                            <p class="price"><span>799</span>元<del><span>899</span>元</del></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0018.webp" alt=""></div>
+                                            <h3 class="title">Air 13.3" 2019款</h3>
+                                            <p class="desc">新一代独立显卡</p>
+                                            <p class="price"><span>4799</span>元<del><span>5399</span>元</del></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div></div>
+                                    <div></div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="banner-box">
                         <a href="">
-                            <img src="" alt="">
+                            <img class="lazy" data-original="../img/t-3.webp" alt="">
                         </a>
                     </div>
                 </div>
+                <!-- 智能部分 -->
+                <div class="box-4">
+                    <div class="box-hd">
+                        <h2>智能</h2>
+                        <div class="more">
+                            <ul>
+                                <li>热门</li>
+                                <li>安防</li>
+                                <li>出行</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box-bd clear">
+                        <div class="l-bd">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img class="lazy" data-original="../img/0020.webp" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img class="lazy" data-original="../img/0025.webp" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="r-bd">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0021.webp" alt=""></div>
+                                            <h3 class="title">小米小爱音箱 Play</h3>
+                                            <p class="desc">听音乐、语音遥控家电</p>
+                                            <p class="price"><span>99</span>元</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0022.webp" alt=""></div>
+                                            <h3 class="title">米家智能窗帘</h3>
+                                            <p class="desc">窗帘开合随心控</p>
+                                            <p class="price"><span>799</span>元</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0023.webp" alt=""></div>
+                                            <h3 class="title">小米体脂秤2</h3>
+                                            <p class="desc">轻松掌握身体脂肪率</p>
+                                            <p class="price"><span>99</span>元</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0024.webp" alt=""></div>
+                                            <h3 class="title">九号平衡车</h3>
+                                            <p class="desc">年轻人的酷玩具</p>
+                                            <p class="price"><span>1999</span>元</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0026.webp" alt=""></div>
+                                            <h3 class="title">小米智能门锁 推拉式</h3>
+                                            <p class="desc">一步推拉，高端智能门锁</p>
+                                            <p class="price"><span>1599</span>元</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0027.webp" alt=""></div>
+                                            <h3 class="title">Redmi小爱触屏音箱 8英寸</h3>
+                                            <p class="desc">超大屏，让智能更多可能</p>
+                                            <p class="price"><span>349</span>元</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0028.webp" alt=""></div>
+                                            <h3 class="title">小米手环5</h3>
+                                            <p class="desc">11种运动模式 磁吸式充电</p>
+                                            <p class="price"><span>179</span>元</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div></div>
+                                    <div></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="banner-box">
+                        <a href="">
+                            <img class="lazy" data-original="../img/t-4.webp" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- 搭配部分 -->
+                <div class="box-5">
+                    <div class="box-hd">
+                        <h2>搭配</h2>
+                        <div class="more">
+                            <ul>
+                                <li>热门</li>
+                                <li>耳机音箱</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box-bd clear">
+                        <div class="l-bd">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img class="lazy" data-original="../img/0030.webp" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img class="lazy" data-original="../img/0035.webp" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="r-bd">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0031.webp" alt=""></div>
+                                            <h3 class="title">小米真无线蓝牙耳机Air 2 Pro</h3>
+                                            <p class="desc">主动降噪/持久续航/无线充</p>
+                                            <p class="price"><span>669</span>元</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0032.webp" alt=""></div>
+                                            <h3 class="title">高速无线充套装</h3>
+                                            <p class="desc">快速无线闪充，Qi充电标准</p>
+                                            <p class="price"><span>149</span>元</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0033.webp" alt=""></div>
+                                            <h3 class="title">Redmi AirDots 2真无线蓝牙耳机</h3>
+                                            <p class="desc">支持蓝牙5.0，自动秒连，拿起就能用</p>
+                                            <p class="price"><span>99</span>元</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0034.webp" alt=""></div>
+                                            <h3 class="title">小米真无线蓝牙耳机Air 2s</h3>
+                                            <p class="desc">全面升级，智慧真无线</p>
+                                            <p class="price"><span>339</span>元</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0036.webp" alt=""></div>
+                                            <h3 class="title">Redmi充电宝 10000mAh 标准版 白色</h3>
+                                            <p class="desc">10000mAh大电量 </p>
+                                            <p class="price"><span>59</span>元</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0037.webp" alt=""></div>
+                                            <h3 class="title">Redmi充电宝 20000mAh 快充版</h3>
+                                            <p class="desc">大容量，可上飞机</p>
+                                            <p class="price"><span>99</span>元</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="" alt=""></div>
+                                            <h3 class="title">小米插线板 5孔位</h3>
+                                            <p class="desc">多重安全保护</p>
+                                            <p class="price"><span>39</span>元</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div></div>
+                                    <div></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="banner-box">
+                        <a href="">
+                            <img class="lazy" data-original="../img/t-5.webp" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- 配件部分 -->
+                <div class="box-6">
+                    <div class="box-hd">
+                        <h2>配件</h2>
+                        <div class="more">
+                            <ul>
+                                <li>热门</li>
+                                <li>充电器</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box-bd clear">
+                        <div class="l-bd">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img class="lazy" data-original="../img/0040.webp" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img class="lazy" data-original="../img/0045.webp" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="r-bd">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0041.webp" alt=""></div>
+                                            <h3 class="title">小米氮化镓GaN充电器 Type-C 65W </h3>
+                                            <p class="desc">氮化镓黑科技 65W MAX 大功率快充</p>
+                                            <p class="price"><span>149</span>元</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0042.webp" alt=""></div>
+                                            <h3 class="title">高速无线充套装</h3>
+                                            <p class="desc">快速无线闪充，Qi充电标准</p>
+                                            <p class="price"><span>149</span>元</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0043.webp" alt=""></div>
+                                            <h3 class="title">小米无线充电宝青春版10000mAh</h3>
+                                            <p class="desc">能量满满，无线有线都能充</p>
+                                            <p class="price"><span>129</span>元</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0044.webp" alt=""></div>
+                                            <h3 class="title">小米车载充电器快充版</h3>
+                                            <p class="desc">双口快充，安全稳定</p>
+                                            <p class="price"><span>69</span>元</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0046.webp" alt=""></div>
+                                            <h3 class="title">小米USB充电器65W 快充版（2A1C）</h3>
+                                            <p class="desc">超级快充，三台设备同时充</p>
+                                            <p class="price"><span>149</span>元</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0047.webp" alt=""></div>
+                                            <h3 class="title">小米Type-C转Lightning数据线 1m</h3>
+                                            <p class="desc">苹果MFi官方认证，支持快充</p>
+                                            <p class="price"><span>59</span>元</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0048.webp" alt=""></div>
+                                            <h3 class="title">小米车载充电器快充版1A1C 100W</h3>
+                                            <p class="desc">小米车载充电器快充版1A1C 100W</p>
+                                            <p class="price"><span>99</span>元</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div></div>
+                                    <div></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="banner-box">
+                        <a href="">
+                            <img class="lazy" data-original="../img/t-6.webp" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- 周边部分 -->
+                <div class="box-7">
+                    <div class="box-hd">
+                        <h2>周边</h2>
+                        <div class="more">
+                            <ul>
+                                <li>热门</li>
+                                <li>出行</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box-bd clear">
+                        <div class="l-bd">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img class="lazy" data-original="../img/0050.webp" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img class="lazy" data-original="../img/0055.webp" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="r-bd">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0051.webp" alt=""></div>
+                                            <h3 class="title">米家飞行员太阳镜 Pro</h3>
+                                            <p class="desc">尼龙偏光，轻巧佩戴</p>
+                                            <p class="price"><span>199</span>元</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0052.webp" alt=""></div>
+                                            <h3 class="title">小米巨能写中性笔10支装</h3>
+                                            <p class="desc">一支顶4支，超长顺滑书写</p>
+                                            <p class="price"><span>9.99</span>元</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0053.webp" alt=""></div>
+                                            <h3 class="title">米家迷你保温杯</h3>
+                                            <p class="desc">可以随身携带的温度</p>
+                                            <p class="price"><span>49</span>元</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="" alt=""></div>
+                                            <h3 class="title">贝医生巴氏牙刷 四色装</h3>
+                                            <p class="desc">进口刷毛，好品质</p>
+                                            <p class="price"><span>39.9</span>元</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0056.webp" alt=""></div>
+                                            <h3 class="title">米家运动鞋4</h3>
+                                            <p class="desc">轻盈若絮,弹若脱兔</p>
+                                            <p class="price"><span>169</span>元</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0057.webp" alt=""></div>
+                                            <h3 class="title">米家指甲刀五件套</h3>
+                                            <p class="desc">轻巧多用，优雅随行</p>
+                                            <p class="price"><span>39.9</span>元</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/0058.webp" alt=""></div>
+                                            <h3 class="title">8H乳胶床垫2</h3>
+                                            <p class="desc">软硬双面可睡</p>
+                                            <p class="price"><span>3299</span>元<del><span>599</span>元</del></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div></div>
+                                    <div></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="banner-box">
+                        <a href="">
+                            <img class="lazy" data-original="../img/t-7.webp" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- 视频部分 -->
                 <div class="video-list">
                     <div class="box-hd">
                         <h2>视频</h2>
@@ -181,15 +895,16 @@
                     </div>
                     <div class="box-bd">
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li><a href=""><div class="video-img"><img class="lazy" data-original="../img/0060.webp" alt=""><span class="play"></span></div><h3 class="title">Redmi 10X系列发布会</h3><p class="desc">Redmi 10X系列发布会</p></a></li>
+                            <li><a href=""><div class="video-img"><img class="lazy" data-original="../img/0061.webp" alt=""><span class="play"></span></div><h3 class="title">小米10 青春版 发布会</h3><p class="desc"></p></a></li>
+                            <li><a href=""><div class="video-img"><img class="lazy" data-original="../img/0062.webp" alt=""><span class="play"></span></div><h3 class="title">小米10 8K手机拍大片</h3><p class="desc"></p></a></li>
+                            <li><a href=""><div class="video-img"><img class="lazy" data-original="../img/0063.webp" alt=""><span class="play"></span></div><h3 class="title">小米10发布会</h3><p class="desc"></p></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </main>
+        <!-- 页脚 -->
         <footer>
             <div class="site-footer">
                 <div class="container">
@@ -250,7 +965,7 @@
                                 关注小米：
                                 <a href="" class="wb"></a>
                                 <a href="" class="wx"></a>
-                                <img src="" alt="">
+                                <img class="lazy" data-original="" alt="">
                             </div>
                         </div>
                     </div>
@@ -321,11 +1036,11 @@
                         </p>
                     </div>
                     <div class="info-links">
-                        <a href=""><img src="../img/truste.png" alt=""></a>
-                        <a href=""><img src="../img/v-logo-2.png" alt=""></a>
-                        <a href=""><img src="../img/v-logo-1.png" alt=""></a>
-                        <a href=""><img src="../img/v-logo-3.png" alt=""></a>
-                        <a href=""><img src="../img/zs-01.png" alt=""></a>
+                        <a href=""><img class="lazy" data-original="../img/truste.png" alt=""></a>
+                        <a href=""><img class="lazy" data-original="../img/v-logo-2.png" alt=""></a>
+                        <a href=""><img class="lazy" data-original="../img/v-logo-1.png" alt=""></a>
+                        <a href=""><img class="lazy" data-original="../img/v-logo-3.png" alt=""></a>
+                        <a href=""><img class="lazy" data-original="../img/zs-01.png" alt=""></a>
                     </div>
                     <div class="slogan">
                         探索黑科技，小米为发烧而生
@@ -337,29 +1052,48 @@
     <!-- 工具条 -->
     <div class="tool-bar">
         <a href="">
-            <div class="icon"></div>
+            <div class="icon">
+                <img class="lazy" data-original="../img/sjApp.png" alt="">
+            </div>
             <span class="text">手机APP</span>
         </a>
         <a href="">
-            <div class="icon"></div>
+            <div class="icon">
+                <img class="lazy" data-original="../img/grzx.png" alt="">
+            </div>
             <span class="text">个人中心</span>
         </a>
         <a href="">
-            <div class="icon"></div>
+            <div class="icon">
+                <img class="lazy" data-original="../img/shfw.png" alt="">
+            </div>
             <span class="text">售后服务</span>
         </a>
         <a href="">
-            <div class="icon"></div>
+            <div class="icon">
+                <img class="lazy" data-original="../img/rgkf.png" alt="">
+            </div>
             <span class="text">人工客服</span>
         </a>
         <a href="">
-            <div class="icon"></div>
+            <div class="icon">
+                <img class="lazy" data-original="../img/gwc.png" alt="">
+            </div>
             <span class="text">购物车</span>
         </a>
         <a href="">
-            <div class="icon"></div>
+            <div class="icon">
+                <img class="lazy" data-original="../img/totop.png" alt="">
+            </div>
             <span class="text">回到顶部</span>
         </a>
     </div>
 </body>
 </html>
+<script src="../js/jquery.js"></script>
+<script src="../js/jquery.lazyload.js"></script>
+<script type="text/javascript" charset="utf-8">
+    $(function() {
+        $("img.lazy").lazyload({effect: "fadeIn"});
+    });
+  </script>
