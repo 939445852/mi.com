@@ -1,5 +1,5 @@
 import './library/jquery.js';
-
+// import '../js/library/jquery.lazyload.js';
 $.ajax({
     type: "get",
     url: "../../interface/getData.php",
