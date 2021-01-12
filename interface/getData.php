@@ -6,4 +6,7 @@
     $mysqli->close();
 
     $arr = array();
+    while($row = $res->fetch_assoc()){
+        
+    }
 ?>
