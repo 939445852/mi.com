@@ -2,11 +2,13 @@
     include('./library/conn.php');
 
     $sql = "select * from product";
-    $red = $mysqli->query($sql);
+    $result = $mysqli->query($sql);
     $mysqli->close();
 
     $arr = array();
-    while($row = $res->fetch_assoc()){
-        
+    while($row = $result->fetch_assoc()){
+        array_push($arr,$row);
     }
+    $json = json_encode($arr);
+    echo $json;
 ?>

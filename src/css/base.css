@@ -18,6 +18,10 @@ body {
 a {
   text-decoration: none;
 }
+img {
+  border: 0;
+  display: block;
+}
 li {
   list-style: none;
 }
@@ -402,9 +406,12 @@ main .box-2 .box-bd .l-bd {
 main .box-2 .box-bd .l-bd ul {
   width: 234px;
 }
-main .box-2 .box-bd .l-bd ul li {
+main .box-2 .box-bd .l-bd ul li a {
+  display: block;
+}
+main .box-2 .box-bd .l-bd ul li a img {
   width: 234px;
-  height: 628px;
+  height: 614px;
 }
 main .box-2 .box-bd .r-bd {
   float: left;
