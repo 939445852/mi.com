@@ -354,8 +354,45 @@ main .box-1 .box-hd .more span {
 main .box-1 .box-bd .l-bd {
   float: left;
   width: 234px;
-  height: 340px;
-  background: #fff;
+  height: 300px;
+  padding-top: 39px;
+  text-align: center;
+  background: #f1eded;
+  border-top: 1px solid #e53935;
+}
+main .box-1 .box-bd .l-bd .field {
+  padding-top: 15px;
+  font-size: 21px;
+  color: #ef3a3b;
+}
+main .box-1 .box-bd .l-bd img {
+  margin: 25px auto;
+}
+main .box-1 .box-bd .l-bd .hint {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.54);
+}
+main .box-1 .box-bd .l-bd .countdown {
+  width: 168px;
+  margin: 28px auto 0;
+}
+main .box-1 .box-bd .l-bd .countdown span {
+  float: left;
+  width: 46px;
+  height: 46px;
+  font-size: 24px;
+  line-height: 46px;
+  background: #605751;
+  color: #fff;
+}
+main .box-1 .box-bd .l-bd .countdown i {
+  float: left;
+  width: 15px;
+  height: 46px;
+  line-height: 46px;
+  color: #605751;
+  font-size: 28px;
+  font-style: normal;
 }
 main .box-1 .box-bd .r-bd {
   float: left;
@@ -370,8 +407,41 @@ main .box-1 .box-bd .r-bd ul li {
   float: left;
   margin-left: 14px;
   width: 234px;
-  height: 340px;
+  height: 300px;
+  padding-top: 39px;
   background: #fff;
+  border-top: 1px solid #e53935;
+}
+main .box-1 .box-bd .r-bd ul li a .content {
+  text-align: center;
+}
+main .box-1 .box-bd .r-bd ul li a .content .thumb {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 22px;
+}
+main .box-1 .box-bd .r-bd ul li a .content .title {
+  margin: 0 20px 3px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #212121;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+main .box-1 .box-bd .r-bd ul li a .content .desc {
+  margin: 0 20px 12px;
+  font-size: 12px;
+  color: #b0b0b0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+main .box-1 .box-bd .r-bd ul li a .content .price {
+  color: #ff6709;
+}
+main .box-1 .box-bd .r-bd ul li a .content .price del {
+  color: #b0b0b0;
 }
 main .box-2 .box-hd {
   position: relative;
@@ -391,6 +461,17 @@ main .box-2 .box-hd .more a {
   display: block;
   font-size: 16px;
   color: #424242;
+}
+main .box-2 .box-hd .more a i {
+  width: 12px;
+  height: 12px;
+  padding: 4px;
+  margin-left: 8px;
+  font-size: 12px;
+  line-height: 12px;
+  background: #b0b0b0;
+  color: #fff;
+  border-radius: 16px;
 }
 main .box-2 .box-bd li {
   transition: all 0.2s linear;
@@ -929,11 +1010,14 @@ footer .site-info .slogan {
   text-indent: -999px;
   overflow: hidden;
 }
+header {
+  position: relative;
+}
 .tool-bar {
   position: fixed;
   z-index: 3;
   right: 0;
-  bottom: 70px;
+  top: 70px;
 }
 .tool-bar a {
   display: block;

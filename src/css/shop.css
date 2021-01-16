@@ -125,22 +125,20 @@ main {
   padding: 38px 0;
   background: #f5f5f5;
 }
-main .cart .cart_list {
-  background: #fff;
-}
-main .cart .cart_list .list_head {
+main .cart .cart_head {
   height: 70px;
   padding-right: 26px;
   line-height: 70px;
   color: #424242;
+  background: #fff;
 }
-main .cart .cart_list .list_head div {
+main .cart .cart_head div {
   float: left;
 }
-main .cart .cart_list .list_head .col-check {
+main .cart .cart_head .h-check {
   width: 110px;
 }
-main .cart .cart_list .list_head .col-check i {
+main .cart .cart_head .h-check i {
   position: relative;
   top: -1px;
   display: inline-block;
@@ -156,47 +154,48 @@ main .cart .cart_list .list_head .col-check i {
   vertical-align: middle;
   cursor: pointer;
 }
-main .cart .cart_list .list_head .col-img {
+main .cart .cart_head .h-img {
   width: 120px;
 }
-main .cart .cart_list .list_head .col-name {
+main .cart .cart_head .h-name {
   width: 380px;
   text-align: left;
 }
-main .cart .cart_list .list_head .col-price {
+main .cart .cart_head .h-price {
   width: 150px;
   text-align: center;
 }
-main .cart .cart_list .list_head .col-num {
+main .cart .cart_head .h-num {
   width: 150px;
   text-align: center;
 }
-main .cart .cart_list .list_head .col-total {
+main .cart .cart_head .h-subtotal {
   width: 120px;
   padding-right: 80px;
   text-align: right;
 }
-main .cart .cart_list .list_head .col-action {
+main .cart .cart_head .h-action {
   width: 80px;
   text-align: center;
 }
-main .cart .cart_list .list_body .body_box {
-  padding: 15px 0;
-  border-top: 1px solid #e0e0e0;
+main .cart .cart_list {
+  background: #fff;
 }
-main .cart .cart_list .list_body .body_box .col_list {
+main .cart .cart_list .body_box {
   height: 86px;
+  padding: 15px 0;
   padding-right: 26px;
   line-height: 86px;
   color: #424242;
+  border-top: 1px solid #e0e0e0;
 }
-main .cart .cart_list .list_body .body_box .col_list div {
+main .cart .cart_list .body_box div {
   float: left;
 }
-main .cart .cart_list .list_body .body_box .col_list .col-check {
+main .cart .cart_list .body_box .b-check {
   width: 110px;
 }
-main .cart .cart_list .list_body .body_box .col_list .col-check i {
+main .cart .cart_list .body_box .b-check i {
   position: relative;
   top: -1px;
   display: inline-block;
@@ -212,20 +211,20 @@ main .cart .cart_list .list_body .body_box .col_list .col-check i {
   vertical-align: middle;
   cursor: pointer;
 }
-main .cart .cart_list .list_body .body_box .col_list .col-img {
+main .cart .cart_list .body_box .b-img {
   width: 120px;
 }
-main .cart .cart_list .list_body .body_box .col_list .col-img img {
+main .cart .cart_list .body_box .b-img img {
   display: block;
   width: 80px;
   height: 80px;
   border: 0;
 }
-main .cart .cart_list .list_body .body_box .col_list .col-name {
+main .cart .cart_list .body_box .b-name {
   width: 380px;
   text-align: left;
 }
-main .cart .cart_list .list_body .body_box .col_list .col-name .name {
+main .cart .cart_list .body_box .b-name .name {
   margin-top: 35px;
   margin-bottom: 10px;
   font-size: 18px;
@@ -235,25 +234,25 @@ main .cart .cart_list .list_body .body_box .col_list .col-name .name {
   white-space: nowrap;
   overflow: hidden;
 }
-main .cart .cart_list .list_body .body_box .col_list .col-name a {
+main .cart .cart_list .body_box .b-name a {
   color: #424242;
 }
-main .cart .cart_list .list_body .body_box .col_list .col-price {
+main .cart .cart_list .body_box .b-price {
   width: 150px;
   text-align: center;
 }
-main .cart .cart_list .list_body .body_box .col_list .col-num {
+main .cart .cart_list .body_box .b-num {
   width: 150px;
   text-align: center;
 }
-main .cart .cart_list .list_body .body_box .col_list .col-num .col-num-new {
+main .cart .cart_list .body_box .b-num .b-num-new {
   border: 1px solid #e0e0e0;
   text-align: center;
   background-color: #fff;
   margin-top: 23px;
 }
-main .cart .cart_list .list_body .body_box .col_list .col-num .col-num-new a {
-  display: inline-block;
+main .cart .cart_list .body_box .b-num .b-num-new a {
+  display: block;
   float: left;
   width: 38px;
   height: 38px;
@@ -261,10 +260,10 @@ main .cart .cart_list .list_body .body_box .col_list .col-num .col-num-new a {
   line-height: 38px;
   color: #757575;
 }
-main .cart .cart_list .list_body .body_box .col_list .col-num .col-num-new a:hover {
+main .cart .cart_list .body_box .b-num .b-num-new a:hover {
   background: #eee;
 }
-main .cart .cart_list .list_body .body_box .col_list .col-num .col-num-new input[type="text"] {
+main .cart .cart_list .body_box .b-num .b-num-new input[type="text"] {
   float: left;
   width: 72px;
   height: 38px;
@@ -275,16 +274,16 @@ main .cart .cart_list .list_body .body_box .col_list .col-num .col-num-new input
   border-width: 0;
   outline: none;
 }
-main .cart .cart_list .list_body .body_box .col_list .col-total {
+main .cart .cart_list .body_box .b-subtotal {
   width: 120px;
   padding-right: 80px;
   text-align: right;
 }
-main .cart .cart_list .list_body .body_box .col_list .col-action {
+main .cart .cart_list .body_box .b-action {
   width: 80px;
   text-align: center;
 }
-main .cart .cart_list .list_body .body_box .col_list .col-action a {
+main .cart .cart_list .body_box .b-action a {
   display: inline-block;
   width: 24px;
   height: 24px;
@@ -293,41 +292,41 @@ main .cart .cart_list .list_body .body_box .col_list .col-action a {
   color: #757575;
   border-radius: 12px;
 }
-main .cart .cart_bar {
+main .cart .cart_foot {
   height: 50px;
   margin: 20px 0;
   background: #fff;
 }
-main .cart .cart_bar .cart_bar_left {
+main .cart .cart_foot .cart_foot_left {
   float: left;
   line-height: 50px;
 }
-main .cart .cart_bar .cart_bar_left a {
+main .cart .cart_foot .cart_foot_left a {
   margin-left: 32px;
   color: #757575;
 }
-main .cart .cart_bar .cart_bar_left a:hover {
+main .cart .cart_foot .cart_foot_left a:hover {
   color: #ff6700;
 }
-main .cart .cart_bar .cart_bar_left span {
+main .cart .cart_foot .cart_foot_left span {
   margin-left: 16px;
   padding-left: 16px;
   color: #757575;
   border-left: 1px solid #eee;
 }
-main .cart .cart_bar .cart_bar_left span i {
+main .cart .cart_foot .cart_foot_left span i {
   color: #ff6700;
   font-style: normal;
 }
-main .cart .cart_bar .cart_bar_right {
+main .cart .cart_foot .cart_foot_right {
   float: right;
   color: #ff6700;
 }
-main .cart .cart_bar .cart_bar_right em {
+main .cart .cart_foot .cart_foot_right em {
   font-style: normal;
   font-size: 30px;
 }
-main .cart .cart_bar .cart_bar_right .btn {
+main .cart .cart_foot .cart_foot_right .btn {
   display: inline-block;
   width: 200px;
   height: 50px;

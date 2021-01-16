@@ -1,0 +1,114 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+  color: #333;
+}
+.clear::after {
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+a {
+  text-decoration: none;
+}
+img {
+  border: 0;
+}
+li {
+  list-style: none;
+}
+.container {
+  width: 854px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  background: #f9f9f9;
+}
+.header {
+  background: #fff;
+  padding-bottom: 40px;
+}
+.header .logo a {
+  display: block;
+  width: 49px;
+  height: 49px;
+  margin: 0 auto 40px auto;
+  background: url('../img/milogo.png') no-repeat;
+}
+.header .title h4 {
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+}
+.header .main {
+  font-size: 14px;
+  font-weight: normal;
+  color: #333;
+}
+.header .main .reg {
+  width: 332px;
+  margin: 0 auto;
+  padding: 30px 0 70px 0;
+}
+.header .main .reg h5 {
+  font-size: 14px;
+  font-weight: normal;
+  color: #333;
+  padding-bottom: 5px;
+}
+.header .main .reg input[type="text"] {
+  width: 330px;
+  height: 42px;
+  line-height: 42px;
+  border: 1px solid #e8e8e8;
+  outline: none;
+}
+.header .main .reg .hint {
+  margin-bottom: 15px;
+}
+.header .main .reg input[type="submit"] {
+  width: 332px;
+  height: 42px;
+  margin-top: 15px;
+  line-height: 42px;
+  background-color: #ff6700;
+  color: #fff;
+  border: 1px solid #ff6700;
+  cursor: pointer;
+}
+.header .agreement {
+  color: #9d9d9d;
+  text-align: center;
+}
+.header .agreement a {
+  font-weight: bold;
+  color: #333;
+}
+.footer {
+  text-align: center;
+}
+.footer .links {
+  padding-top: 10px;
+}
+.footer .links ul li {
+  display: inline-block;
+}
+.footer .links ul li a {
+  padding: 0 10px;
+  color: #757575;
+}
+.footer .copyright {
+  padding: 10px 0;
+  color: #9d9d9d;
+}
+.footer .copyright a {
+  color: #9d9d9d;
+}

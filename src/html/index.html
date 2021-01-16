@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>小米商城 - 小米11、Redmi Note 9、小米MIX Alpha，小米电视官方网站</title>
     <link rel="stylesheet" href="../css/base.css">
-    <!-- <script src="../js/index.js" type="module"></script> -->
+    <script src="../js/index.js" type="module"></script>
 </head>
 <body>
     <div id="app">
@@ -48,7 +48,7 @@
                         </div>
                         <!-- 条内购物车 -->
                         <div class="topbar-cart">
-                            <a href="" class="cart-mini">购物车<span>（0）</span></a>
+                            <a href="./shop.html" class="cart-mini">购物车<span>（0）</span></a>
                             <!-- 购物车内容 -->
                             <div class="cart-menu">
                                 购物车中还没有商品，赶紧选购吧！
@@ -56,9 +56,9 @@
                         </div>
                         <!-- 条内注册登入按钮 -->
                         <div class="topbar-info">
-                            <a href="">登录</a>
+                            <a href="./login.html">登录</a>
                             <span>|</span>
-                            <a href="">注册</a>
+                            <a href="./login.html">注册</a>
                             <span>|</span>
                             <a href="">消息通知</a>
                         </div>
@@ -194,24 +194,69 @@
                     </div>
                     <div class="box-bd clear">
                         <div class="l-bd">
-
+                            <div class="field">00:00 场</div>
+                            <img src="../img/ms.png" alt="">
+                            <div class="hint">距离开始还有</div>
+                            <div class="countdown">
+                                <span>00</span>
+                                <i>:</i>
+                                <span>00</span>
+                                <i>:</i>
+                                <span>00</span>
+                            </div>
                         </div>
                         <div class="r-bd">
                             <ul>
                                 <li>
                                     <a href="">
                                         <div class="content">
-                                            <div class="thumb"><img class="lazy" data-original="" alt=""></div>
-                                            <h3 class="title">小米电视 大师 65英寸OLED</h3>
-                                            <p class="desc">像素级控光，重塑感官震撼</p>
-                                            <p class="price"><span>9999</span>元<del>12999元</del></p>
+                                            <div class="thumb"><img class="lazy" data-original="../img/ms1.webp" alt=""></div>
+                                            <h3 class="title">米家互联网十字四门冰箱 486L</h3>
+                                            <p class="desc">风冷无霜，长久保鲜</p>
+                                            <p class="price"><span>2899</span>元<del>3499元</del></p>
                                         </div>
                                     </a>
                                 </li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/ms2.webp" alt=""></div>
+                                            <h3 class="title">小米手表 标准版 典雅黑</h3>
+                                            <p class="desc"> 能打电话、能下载APP，才是真正的智能手表</p>
+                                            <p class="price"><span>799</span>元<del>1299元</del></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/ms3.webp" alt=""></div>
+                                            <h3 class="title">米家全自动迷你波轮洗衣机 3kg 白色</h3>
+                                            <p class="desc">高温煮洗，内衣呵护</p>
+                                            <p class="price"><span>799</span>元<del>1099元</del></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/ms4.webp" alt=""></div>
+                                            <h3 class="title">小米笔记本Air 12.5" 2019款 8代M3 4G 256G 银色</h3>
+                                            <p class="desc">像杂志一样随身携带</p>
+                                            <p class="price"><span>3499</span>元<del>3999元</del></p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <div class="content">
+                                            <div class="thumb"><img class="lazy" data-original="../img/ms5.webp" alt=""></div>
+                                            <h3 class="title">小米无线鼠标 Lite 黑色</h3>
+                                            <p class="desc">简约设计，轻盈握感</p>
+                                            <p class="price"><span>29</span>元<del>39元</del></p>
+                                        </div>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -226,7 +271,8 @@
                     <div class="box-hd">
                         <h2>手机</h2>
                         <div class="more">
-                            <a href="">查看全部</a>
+                            <a href="">查看全部<i></i>
+                            </a>
                         </div>
                     </div>
                     <div class="box-bd clear">
@@ -1050,52 +1096,45 @@
                 </div>
             </div>
         </footer>
-    </div>
-    <!-- 工具条 -->
-    <div class="tool-bar">
-        <a href="">
-            <div class="icon">
-                <img class="lazy" data-original="../img/sjApp.png" alt="">
-            </div>
-            <span class="text">手机APP</span>
-        </a>
-        <a href="">
-            <div class="icon">
-                <img class="lazy" data-original="../img/grzx.png" alt="">
-            </div>
-            <span class="text">个人中心</span>
-        </a>
-        <a href="">
-            <div class="icon">
-                <img class="lazy" data-original="../img/shfw.png" alt="">
-            </div>
-            <span class="text">售后服务</span>
-        </a>
-        <a href="">
-            <div class="icon">
-                <img class="lazy" data-original="../img/rgkf.png" alt="">
-            </div>
-            <span class="text">人工客服</span>
-        </a>
-        <a href="">
-            <div class="icon">
-                <img class="lazy" data-original="../img/gwc.png" alt="">
-            </div>
-            <span class="text">购物车</span>
-        </a>
-        <a href="">
-            <div class="icon">
-                <img class="lazy" data-original="../img/totop.png" alt="">
-            </div>
-            <span class="text">回到顶部</span>
-        </a>
+        <!-- 工具条 -->
+        <div class="tool-bar">
+            <a href="">
+                <div class="icon">
+                    <img class="lazy" data-original="../img/sjApp.png" alt="">
+                </div>
+                <span class="text">手机APP</span>
+            </a>
+            <a href="">
+                <div class="icon">
+                    <img class="lazy" data-original="../img/grzx.png" alt="">
+                </div>
+                <span class="text">个人中心</span>
+            </a>
+            <a href="">
+                <div class="icon">
+                    <img class="lazy" data-original="../img/shfw.png" alt="">
+                </div>
+                <span class="text">售后服务</span>
+            </a>
+            <a href="">
+                <div class="icon">
+                    <img class="lazy" data-original="../img/rgkf.png" alt="">
+                </div>
+                <span class="text">人工客服</span>
+            </a>
+            <a href="">
+                <div class="icon">
+                    <img class="lazy" data-original="../img/gwc.png" alt="">
+                </div>
+                <span class="text">购物车</span>
+            </a>
+            <a href="">
+                <div class="icon">
+                    <img class="lazy" data-original="../img/totop.png" alt="">
+                </div>
+                <span class="text">回到顶部</span>
+            </a>
+        </div>
     </div>
 </body>
 </html>
-<script src="../js/library/jquery.js"></script>
-<script src="../js/library/jquery.lazyload.js"></script>
-<script type="text/javascript" charset="utf-8">
-    $(function() {
-        $("img.lazy").lazyload({effect: "fadeIn"});
-    });
-</script>

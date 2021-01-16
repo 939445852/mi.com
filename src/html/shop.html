@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的购物车-小米商城</title>
     <link rel="stylesheet" href="../css/shop.css">
+    <script src="../js/shop.js" type="module"></script>
 </head>
 <body>
     <header>
         <div class="container clear">
-            <div class="header-logo"><a href="">小米官网</a></div>
+            <div class="header-logo"><a href="./index.html">小米官网</a></div>
             <div class="header-title">
                 <h2>我的购物车</h2>
                 <p>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</p>
@@ -40,51 +41,68 @@
     <main>
         <div class="container">
             <div class="cart clear">
-                <div class="cart_list">
-                    <div class="list_head">
-                        <div class="col-check">
-                            <i>√</i>全选
-                        </div>
-                        <div class="col-img">&nbsp;</div>
-                        <div class="col-name">商品名称</div>
-                        <div class="col-price">单价</div>
-                        <div class="col-num">数量</div>
-                        <div class="col-total">小计</div>
-                        <div class="col-action">操作</div>
+                <div class="cart_head">
+                    <div class="h-check">
+                        <i></i>全选
                     </div>
-                    <div class="list_body">
-                        <div class="body_box">
-                            <div class="col_list">
-                                <div class="col-check">
-                                    <i>√</i>
-                                </div>
-                                <div class="col-img"><img src="../img/0002.webp" alt=""></div>
-                                <div class="col-name">
-                                    <a href="">
-                                        <h3 class="name">Redmi充电宝 10000mAh 白色</h3>
-                                    </a>
-                                </div>
-                                <div class="col-price">59元</div>
-                                <div class="col-num">
-                                    <div class="col-num-new">
-                                        <a href="" class="subtract">-</a>
-                                        <input type="text" name="" id="" value="1">
-                                        <a href="" class="add">+</a>
-                                    </div>
-                                </div>
-                                <div class="col-total">59元</div>
-                                <div class="col-action"><a href="">12</a></div>
+                    <div class="h-img">&nbsp;</div>
+                    <div class="h-name">商品名称</div>
+                    <div class="h-price">单价</div>
+                    <div class="h-num">数量</div>
+                    <div class="h-subtotal">小计</div>
+                    <div class="h-action">操作</div>
+                </div>
+                <div class="cart_list">
+                    <!-- <div class="body_box">
+                        <div class="b-check">
+                            <i>√</i>
+                        </div>
+                        <div class="b-img"><img src="../img/0002.webp" alt=""></div>
+                        <div class="b-name">
+                            <a href="">
+                                <h3 class="name">Redmi充电宝 10000mAh 白色</h3>
+                            </a>
+                        </div>
+                        <div class="b-price">59元</div>
+                        <div class="b-num">
+                            <div class="b-num-new">
+                                <a href="#" class="subtract">-</a>
+                                <input type="text" name="" id="" class="num" value="1">
+                                <a href="#" class="add">+</a>
                             </div>
                         </div>
+                        <div class="b-subtotal">59元</div>
+                        <div class="b-action"><a href="">删</a></div>
                     </div>
+                    <div class="body_box">
+                        <div class="b-check">
+                            <i>√</i>
+                        </div>
+                        <div class="b-img"><img src="../img/0002.webp" alt=""></div>
+                        <div class="b-name">
+                            <a href="">
+                                <h3 class="name">Redmi充电宝 10000mAh 白色</h3>
+                            </a>
+                        </div>
+                        <div class="b-price">59元</div>
+                        <div class="b-num">
+                            <div class="b-num-new">
+                                <a href="#" class="subtract">-</a>
+                                <input type="text" name="" id="" class="num" value="1">
+                                <a href="#" class="add">+</a>
+                            </div>
+                        </div>
+                        <div class="b-subtotal">59元</div>
+                        <div class="b-action"><a href="javascript:;">删</a></div>
+                    </div> -->
                 </div>
-                <div class="cart_bar">
-                    <div class="cart_bar_left">
+                <div class="cart_foot">
+                    <div class="cart_foot_left">
                         <a href="">继续购物</a>
                         <span>共<i>2</i>件商品，已选择<i>2</i>件</span>
                     </div>
-                    <div class="cart_bar_right">
-                        <span>合计：<em>120</em>元</span>
+                    <div class="cart_foot_right">
+                        <span class="foot_total">合计：<em class="em">0</em>元</span>
                         <a href="" class="btn">去结算</a>
                     </div>
                 </div>
