@@ -38,9 +38,7 @@ let h = 24;
 let spans = $('.countdown span').toArray();
 let time = setInterval(function(){
     // 新的小时变动
-    xh = h-nowh-1>10?h-nowh-1:"0"+(h-nowh);
-    console.log(nowh);
-    console.log(h);
+    xh = h-nowh-1>10?h-nowh-1:"0"+(h-nowh-1);
     xm = 59-nowm>=10?59-nowm:"0"+(59-nowm);
     xs = 59-nows>=10?59-nows:"0"+(59-nows);
     now = new Date();
@@ -78,4 +76,20 @@ let time = setInterval(function(){
     spans[2].innerHTML = xs;
     $('.countdown').siblings('.field').html(h>10?h+":00场":"0"+h+":00场");
 },1000);
+
+// 二级效果
+
+$('.header-nav').on('mouseenter',function(){
+    $('.header-nav-menu').removeClass('show');
+});
+$('.header-nav').on('mouseleave',function(){
+    $('.header-nav-menu').addClass('show');
+});
+
+$('.left-nav>ul').on('mouseenter',function(){
+    $('.right-nav').removeClass('show');
+});
+$('.left-nav>ul').on('mouseleave',function(){
+    $('.right-nav').addClass('show');
+});
 
