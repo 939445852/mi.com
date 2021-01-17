@@ -44,12 +44,13 @@ header .header-logo {
   height: 48px;
   margin-top: 26px;
   margin-right: 45px;
+  font-size: 0;
 }
 header .header-logo a {
   display: block;
   width: 48px;
   height: 48px;
-  background: #ff6700;
+  background: #ff6700 url(../img/mi-logo.png) no-repeat center center;
 }
 header .header-title {
   float: left;
@@ -291,6 +292,9 @@ main .cart .cart_list .body_box .b-action a {
   line-height: 24px;
   color: #757575;
   border-radius: 12px;
+}
+main .cart .show {
+  display: block;
 }
 main .cart .cart_foot {
   height: 50px;

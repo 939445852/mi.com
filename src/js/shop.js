@@ -50,30 +50,54 @@ if(shop){
                             cookie.set('shop',JSON.stringify(shop),1);
                         }
                     });
+                    let us = 0;
+                    let b = 0;//判断选中数量
+                    let checks = $('.b-check').children('i').toArray();
+                    checks.filter(el => {
+                    if(el.innerText=="√"){
+                        us += parseFloat($(el).parent().siblings('.b-subtotal').html());
+                        b++;//选择数量+1
+                        }else{
+                            
+                        }
+                    })
+                    // 合计
+                    $('.foot_total').children('.em').html(us);
+
+                    $('.cart_foot_left i').toArray()[0].innerHTML = $('.b-check i').length;
+                    $('.cart_foot_left i').toArray()[1].innerHTML=b;
                 });
             });
-            let hj = 0;
-
+            // 全选
             $('.h-check').on('click',function(){
-                if($('.b-check i').html()=="√"){
-                    $('.h-check i').html(' ');
-                    $('.b-check i').html(' ');
+                if($('.h-check i').html()=="√"){
+                    $('.h-check i').html('');
+                }else{
+                    $('.h-check i').html('√');
+                }
+                if($('.b-check i').html()=="√" || $('.b-check i').length == 0){
+                    $('.h-check i').html('');
+                    $('.b-check i').html('');
                 }else{
                     $('.h-check i').html('√');
                     $('.b-check i').html('√');
                 }
                 let us = 0;
+                let b = 0;//判断选中数量
                 let checks = $('.b-check').children('i').toArray();
                 checks.filter(el => {
                     if(el.innerText=="√"){
                     us += parseFloat($(el).parent().siblings('.b-subtotal').html());
+                    b++;
                     }else{
                         
                     }
                 })
+                $('.cart_foot_left i').toArray()[1].innerHTML=b;
                 // 合计
                 $('.foot_total').children('.em').html(us);
             });
+            // 单选
             $('.b-check').on('click',function(){
                 if($(this).children().html()=="√"){
                     $(this).children().html('');
@@ -82,37 +106,29 @@ if(shop){
                     $(this).children().html('√');
                     let ii = $('.b-check i').toArray();
                     let bool = ii.every(el => el.innerText=="√");
-                        if(bool){
-                            $('.h-check i').html('√');
-                            //找到所有勾选的商品
-                        }else{
-                            $('.h-check i').html('');
-                        }
-
-                        // //找到所有勾选的商品
-                        // let checks = $('.b-check').children('i').toArray();
-                        // checks.filter(el => {
-                        //     if(el.innerText=="√"){
-                        //     c += parseFloat($(el).parent().siblings('.b-subtotal').html());
-                        //     }else{
-                                
-                        //     }
-                        // })
-                        // // 合计
-                        // $('.foot_total').children('.em').html(c);
+                    if(bool){
+                        $('.h-check i').html('√');
+                        //找到所有勾选的商品
+                    }else{
+                        $('.h-check i').html('');
+                    }
                 }
                 let u = 0;
+                let b = 0;//判断选中数量
                 let checks = $('.b-check').children('i').toArray();
                 checks.filter(el => {
                     if(el.innerText=="√"){
                     u += parseFloat($(el).parent().siblings('.b-subtotal').html());
+                    b++;//选择数量+1
                     }else{
                         
                     }
                 })
+                $('.cart_foot_left i').toArray()[1].innerHTML=b;
                 // 合计
                 $('.foot_total').children('.em').html(u);
-            });     
+            });
+            // 删除
             $('.subtract').on('click',function(){
                 //数量框
                 let num = $(this).siblings('.num');
@@ -125,6 +141,19 @@ if(shop){
                         num.parent().parent().siblings('.b-check').children('i').html('');
                         //全选框也为空
                         $('.h-check i').html(' ');
+                        // 直接删除商品
+                        $(this).parent().parent().parent().remove();
+                        // 重新计算全选
+                        let qx = $('.b-check i').toArray();
+                        let bool = qx.every(el => el.innerText=="√");
+                        if(bool){
+                            $('.h-check i').html('√');
+                            //找到所有勾选的商品
+                        }else{
+                            $('.h-check i').html('');
+                        }
+                        
+                        // 重新计算合计
                         let f = 0;
                         let checks = $('.b-check').children('i').toArray();
                         checks.filter(el => {
@@ -170,6 +199,7 @@ if(shop){
 
 
             });
+            // 添加
             $('.add').on('click',function(){
                 //数量框
                 let num = $(this).siblings('.num');
@@ -182,10 +212,6 @@ if(shop){
                 }
                 // 更新数量
                 num.val(add);
-
-                // num.on('change',function(){
-                //     console.log($(this).val());
-                // })
                  
                 // 小计框
                 let subtotal = $(this).parent().parent().siblings('.b-subtotal');
@@ -228,8 +254,45 @@ if(shop){
                 // // 合计
                 // $('.cart_foot_right').html(hj);
             });
+            //数量框输入改变
+            $('input[type="text"]').on('change',function(){
+                // 小计框
+                let subtotal = $(this).parent().parent().siblings('.b-subtotal');
+                // 单价框
+                let price = $(this).parent().parent().siblings('.b-price');
+                // 计算后更新小计
+                subtotal.html(parseFloat(parseFloat(price.html())*$(this).val()).toFixed(2)+"元");
+
+                // 勾选框
+                let check = $(this).parent().parent().siblings('.b-check').children('i');
+                //判断是否选中
+                let c = 0;
+                if(check.html() == "√"){
+                    //找到所有勾选的商品
+                    let b = 0;//判断选中数量
+                    let checks = $('.b-check').children('i').toArray();
+                    checks.filter(el => {
+                        if(el.innerText=="√"){
+                           c += parseFloat($(el).parent().siblings('.b-subtotal').html());
+                           b++;//选择数量+1
+                        }else{
+                            
+                        }
+                    })
+
+                    $('.cart_foot_left i').toArray()[1].innerHTML=b;
+                    // 合计
+                    $('.foot_total').children('.em').html(c);
+                }
+            })
+            // 商品总数
+            $('.cart_foot_left i').toArray()[0].innerHTML = $('.b-check i').length;
+            //购物车是否为空
+            // console.log($('.b-check i'));
         }
     })
 }
+console.log($('.b-check i').length == 0)
+
 
 
