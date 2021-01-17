@@ -293,8 +293,8 @@ main .cart .cart_list .body_box .b-action a {
   color: #757575;
   border-radius: 12px;
 }
-main .cart .show {
-  display: block;
+main .cart .kong {
+  display: none;
 }
 main .cart .cart_foot {
   height: 50px;

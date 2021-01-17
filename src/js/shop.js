@@ -66,6 +66,10 @@ if(shop){
 
                     $('.cart_foot_left i').toArray()[0].innerHTML = $('.b-check i').length;
                     $('.cart_foot_left i').toArray()[1].innerHTML=b;
+                    if($('.cart_foot_left i').toArray()[0].innerHTML=="0"){
+                        // 空购物车显示
+                        $('#kong').removeAttr('class');
+                    }
                 });
             });
             // 全选
@@ -292,7 +296,10 @@ if(shop){
         }
     })
 }
-console.log($('.b-check i').length == 0)
+if(shop.length == 0){
+    // 空购物车显示
+    $('#kong').removeAttr('class');
+};
 
 
 
