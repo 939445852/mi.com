@@ -78,18 +78,3 @@ let time = setInterval(function(){
 },1000);
 
 // 二级效果
-
-$('.header-nav').on('mouseenter',function(){
-    $('.header-nav-menu').removeClass('show');
-});
-$('.header-nav').on('mouseleave',function(){
-    $('.header-nav-menu').addClass('show');
-});
-
-$('.left-nav>ul').on('mouseenter',function(){
-    $('.right-nav').removeClass('show');
-});
-$('.left-nav>ul').on('mouseleave',function(){
-    $('.right-nav').addClass('show');
-});
-

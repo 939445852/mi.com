@@ -174,15 +174,13 @@ header .site-header .header-search form input[type="submit"]:hover {
 header .header-nav-menu {
   position: absolute;
   top: 260px;
+  display: none;
   z-index: 2;
   width: 100%;
   height: 200px;
   background: #fff;
   border-top: 1px solid #e0e0e0;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.18);
-}
-header .show {
-  display: none;
 }
 header .category-menu .container {
   position: relative;
@@ -212,6 +210,7 @@ header .category-menu .container .left-nav ul li a:hover {
 header .category-menu .container .right-nav {
   position: absolute;
   left: 234px;
+  display: none;
   z-index: 1;
   height: 458px;
   background-color: #fff;
@@ -1021,7 +1020,7 @@ header {
   right: 0;
   top: 70px;
 }
-.tool-bar a {
+.tool-bar .stairs {
   display: block;
   margin-top: -1px;
   width: 82px;
@@ -1030,21 +1029,30 @@ header {
   background: #fff;
   border: 1px solid #f5f5f5;
 }
-.tool-bar a .icon {
+.tool-bar .stairs .icon {
   margin: 18px auto 8px;
   width: 30px;
   height: 30px;
 }
-.tool-bar a .icon img {
+.tool-bar .stairs .icon img {
   width: 30px;
   height: 30px;
 }
-.tool-bar a .text {
+.tool-bar .stairs .icon img:nth-of-type(2) {
+  display: none;
+}
+.tool-bar .stairs .text {
   color: #757575;
 }
-.tool-bar a .text:hover {
+.tool-bar .stairs:hover .icon img:nth-of-type(1) {
+  display: none;
+}
+.tool-bar .stairs:hover .icon img:nth-of-type(2) {
+  display: block;
+}
+.tool-bar .stairs:hover .text {
   color: #ff6700;
 }
-.tool-bar a:nth-last-of-type(1) {
+.tool-bar .stairs:nth-last-of-type(1) {
   margin-top: 14px;
 }
